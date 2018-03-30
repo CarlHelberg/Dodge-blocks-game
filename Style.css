@@ -1,0 +1,25 @@
+.canvas{
+	border-style:groove;
+	width:60%;
+	height:50%;
+	margin:auto;
+}
+
+.canvasContainer{
+	position:relative;
+	background-color:blue;
+}
+.innerCanvas{
+
+	background-color:blue;
+}
+
+#mainCanvas{
+	    display: -webkit-box;
+}
+
+#startButton{
+
+	min-height: 40px;
+	min-width: 100px;
+}
