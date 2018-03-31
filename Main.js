@@ -116,6 +116,54 @@ function moveUp(){
 
 }
 
+function noMoveRight(){
+	if (character.charX >=280 ){
+
+			destroyCharacter();
+					myCharacter.fillStyle = "#FF0000";
+					character.charX = character.charX - 2;
+			myCharacter.fillRect(character.charX,character.charY,character.charH,character.charW);
+			createGame();
+
+	};
+};
+
+function noMoveUp(){
+	if (character.charY < 0 ){
+
+			destroyCharacter();
+					myCharacter.fillStyle = "#FF0000";
+					character.charY = character.charY + 2;
+			myCharacter.fillRect(character.charX,character.charY,character.charH,character.charW);
+			createGame();
+
+	};
+};
+
+function noMoveLeft(){
+	if (character.charX < 0 ){
+
+			destroyCharacter();
+					myCharacter.fillStyle = "#FF0000";
+					character.charX = character.charX + 2;
+			myCharacter.fillRect(character.charX,character.charY,character.charH,character.charW);
+			createGame();
+
+	};
+};
+
+function noMoveDown(){
+	if (character.charY >= 130 ){
+
+			destroyCharacter();
+					myCharacter.fillStyle = "#FF0000";
+					character.charY = character.charY - 2;
+			myCharacter.fillRect(character.charX,character.charY,character.charH,character.charW);
+			createGame();
+
+	};
+};
+
 
 
 document.onkeydown = function(e) {
